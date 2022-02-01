@@ -1,0 +1,78 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Flex */
+body, .count-title, .count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  margin: 0;
+}
+
+#board {
+  height: 95vmin;
+  width: 95vmin;
+  background: blue;
+  display: grid;
+}
+
+.square {
+  border: 0.1vmin solid black;
+}
+
+.land {
+  background: green;
+}
+
+/* Outside of the board */
+
+.menu {
+  width: 95vmin;
+}
+
+.menu, .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.count-title {
+  height: 5vmin;
+  padding: 2em;
+
+
+  font-weight: 700;
+  font-size: 20px;
+
+  color: white;
+  background: purple;
+}
+
+.count {
+  background: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.play {
+  font-weight: 900;
+  background: green;
+  color: white;
+}
+
+.reset {
+  font-weight: 900;
+  background: red;
+  color: white;
+}
